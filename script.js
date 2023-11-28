@@ -6,7 +6,7 @@ function handleScroll() {
     sections.forEach(sec => {
         let offset = sec.offsetTop;
         let height = sec.offsetHeight;
-        let startAnimationOffset = 150;
+        let startAnimationOffset = 300;
 
         if (top >= offset - startAnimationOffset && top < offset + height) {
             sec.classList.add('show-animate');
