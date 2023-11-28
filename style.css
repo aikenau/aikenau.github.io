@@ -149,16 +149,16 @@ footer p {
 @media only screen and (max-width: 768px) {
 
     h1 {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     p {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .profile-pic {
-        width: 15vh;
-        height: 15vh;
+        width: 40vh;
+        height: 40vh;
     }
 }
 
@@ -166,15 +166,15 @@ footer p {
 @media only screen and (max-width: 480px) {
 
     h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .profile-pic {
-        width: 10vh;
-        height: 10vh;
+        width: 30vh;
+        height: 30vh;
     }
 }
