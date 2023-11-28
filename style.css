@@ -45,8 +45,8 @@ section .animate {
 
 .profile-pic {
     margin-top: 5vh;
-    width: 40vw;
-    height: 40vw;
+    width: 30vw;
+    height: 30vw;
     max-width: 300px;
     max-height: 300px;
     border-radius: 50%;
@@ -55,11 +55,13 @@ section .animate {
 }
 
 .sec-1 .animate {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
+
 }
 
 .sec-1.show-animate .animate {
     transform: translateX(0);
+
 }
 
 .linkedin-button {
@@ -93,7 +95,8 @@ section .animate {
 }
 
 .sec-3 .animate {
-    transform: scale(.7);
+    transform: scale(.3);
+
 }
 
 .sec-3.show-animate .animate {
@@ -125,7 +128,7 @@ section .animate {
 .sec-5 .images img {
     max-width: 30vw;
     width:100%;
-    margin: 0 1vw;
+    margin: 1vw 1vw;
     transform: translateX(-100%);
     transition-delay: calc(.2s * var(--i));
 }
@@ -134,16 +137,33 @@ section .animate {
     transform: translateX(0);
 }
 
+
+#img1 .images img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#img1 .images img {
+    transition: transform 0.1s ease;
+}
+
+
+
 footer {
     text-align: center;
     padding: 20px;
     background: #1e7165;
-    color: white;
 }
 
 footer p {
     margin: 0;
+    color: white;
     font-size: 18px;
+}
+
+footer p a{
+    text-decoration: none;
+    color: wheat;
 }
 
 @media only screen and (max-width: 768px) {
