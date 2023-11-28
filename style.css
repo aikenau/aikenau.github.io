@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #1f242d;
+    overflow-x: hidden;
+}
+
+h1 {
+    position: relative;
+    font-size: 10vw;
+    color: #fff;
+}
+
+p{
+    position: relative;
+    font-size: 5vw;
+    color:aqua;
+    font-weight: 200;
+}
+
+section .animate {
+    opacity: 0;
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+section .animate {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.profile-pic {
+    margin-top: 5vh;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    border: 3px solid white; 
+    object-fit: cover;
+}
+
+.sec-1 .animate {
+    transform: translateX(-100%);
+}
+
+.sec-1.show-animate .animate {
+    transform: translateX(0);
+}
+
+.linkedin-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; /* Space above the button */
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.linkedin-button:hover {
+    background-color: #005983; /* Darker blue on hover */
+}
+
+
+.sec-2 .animate {
+    transform: translateX(100%);
+}
+
+.sec-2.show-animate .animate {
+    transform: translateX(0);
+}
+
+.sec-2 p {
+    color: #0f0;
+}
+
+.sec-3 .animate {
+    transform: scale(.7);
+}
+
+.sec-3.show-animate .animate {
+    transform: scale(1);
+}
+
+.sec-3 p {
+    color: rgba(255, 221, 0, 0.953);
+}
+
+.sec-4 .showRight-animate {
+    position: absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background: #1f242d;
+    transition: 1s;
+}
+
+.sec-4.show-animate  .showRight-animate {
+    width:0;
+        /*background: transparent;*/
+}
+
+.sec-4 p {
+    color: rgba(255, 0, 230, 0.953);
+}
+
+.sec-5 .images img {
+    max-width: 300px;
+    width:100%;
+    margin: 0 10px;
+    transform: translateX(-100%);
+    transition-delay: calc(.2s * var(--i));
+}
+
+.sec-5.show-animate .images img {
+    transform: translateX(0);
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for tablet screens here */
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    /* ...other styles for tablet screens */
+
+    .profile-pic {
+        width: 15vh; /* Adjust the size for tablet screens */
+        height: 15vh;
+    }
+}
+
+/* Media queries for mobile screens */
+@media only screen and (max-width: 480px) {
+    /* Styles for mobile screens here */
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    /* ...other styles for mobile screens */
+
+    .profile-pic {
+        width: 10vh; /* Adjust the size for mobile screens */
+        height: 10vh;
+    }
+}
