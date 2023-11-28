@@ -116,7 +116,6 @@ section .animate {
 
 .sec-4.show-animate  .showRight-animate {
     width:0;
-        /*background: transparent;*/
 }
 
 .sec-4 p {
@@ -138,7 +137,7 @@ section .animate {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e7165; /* Match your site's theme */
+    background: #1e7165;
     color: white;
 }
 
@@ -148,7 +147,7 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Styles for tablet screens here */
+
     h1 {
         font-size: 50px;
     }
@@ -156,17 +155,16 @@ footer p {
     p {
         font-size: 20px;
     }
-    /* ...other styles for tablet screens */
 
     .profile-pic {
-        width: 15vh; /* Adjust the size for tablet screens */
+        width: 15vh;
         height: 15vh;
     }
 }
 
-/* Media queries for mobile screens */
+
 @media only screen and (max-width: 480px) {
-    /* Styles for mobile screens here */
+
     h1 {
         font-size: 30px;
     }
@@ -174,10 +172,9 @@ footer p {
     p {
         font-size: 18px;
     }
-    /* ...other styles for mobile screens */
 
     .profile-pic {
-        width: 10vh; /* Adjust the size for mobile screens */
+        width: 10vh;
         height: 10vh;
     }
 }
