@@ -49,8 +49,8 @@ section .animate {
 .profile-pic {
     margin-top: 5vh;
     margin-bottom: 3vh;
-    width: 30vw;
-    height: 30vw;
+    width: 20vw;
+    height: 20vw;
     max-width: 300px;
     max-height: 300px;
     border-radius: 50%;
